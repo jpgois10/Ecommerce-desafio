@@ -43,7 +43,7 @@
 
     /* Layout */
     --container-padding: 1.6rem;
-    --layout-width: 144rem; /* 1440px */
+    --layout-width: 152rem; /* 1552px */
     --layout-height: 545.7rem; /* 5457px */
     --layout-offset-top: -44.6rem; /* -446px */
     --layout-offset-left: 1130.2rem; /* 1302px */
@@ -70,4 +70,7 @@
     --shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.25);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
     --shadow-lg: 0 4px 22px rgba(0, 0, 0, 0.25);
+
+    /* Transitions */
+    --transition-base: 250ms ease-in-out;
 }
