@@ -1,11 +1,10 @@
-/* Icon styles */
 .icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Default icon sizes */
+
 .icon svg {
     width: 24px;
     height: 24px;
@@ -13,7 +12,7 @@
     transition: fill 0.3s ease;
 }
 
-/* Specific icon styles */
+
 .icon-heart svg {
     width: 62px;
     height: 54px;
@@ -38,4 +37,29 @@
     height: 100%;
     top: 17px;
     left: 64px;
+}
+
+.chevron-down {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: var(--spacing-xs);
+    transition: transform var(--transition-base);
+}
+
+.chevron-down img {
+    width: 24px;
+    height: 24px;
+    padding-top: 8px;
+    vertical-align: middle;
+    fill: currentColor;
+    transition: fill var(--transition-base);
+}
+
+.nav-link:hover .chevron-down img {
+    fill: var(--color-primary);
+}
+
+.nav-link.active .chevron-down {
+    transform: rotate(180deg);
 }
