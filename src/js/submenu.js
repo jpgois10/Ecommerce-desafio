@@ -26,13 +26,12 @@ export function initSubmenu() {
     });
 
     categoriesLink.addEventListener('mouseleave', () => {
-        // Verifica se o mouse ainda está sobre o submenu
         setTimeout(() => {
             if (!isHoveringSubmenu) {
                 submenu.classList.remove('active');
                 chevronIcon.classList.remove('active');
             }
-        }, 200); // Delay para permitir a transição do mouse para o submenu
+        }, 200);
     });
 
     submenu.addEventListener('mouseenter', () => {
@@ -45,7 +44,6 @@ export function initSubmenu() {
         chevronIcon.classList.remove('active');
     });
 
-    // Fechar o submenu ao clicar fora dele
     document.addEventListener('click', (event) => {
         if (!event.target.closest('.nav-link-submenu') && !event.target.closest('.submenu')) {
             submenu.classList.remove('active');
