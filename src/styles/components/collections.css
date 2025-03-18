@@ -41,13 +41,13 @@
     background-color: var(--color-background);
     border-radius: 28px;
     border: 3px solid #ffffff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-sm);
     overflow: hidden;
   }
   
   .collection-image {
     width: 100%;
-    height: 351px;
+    height: 354px;
     object-fit: cover;
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
@@ -74,26 +74,17 @@
     margin-top: 12px;
   }
   
-  @media (max-width: 991px) {
-    .shop-title {
-      font-size: 36px;
+  @media (max-width: 400px) {
+    .collection-grid {
+        max-width: 100%;
+        transform: scale(0.9);
     }
-  
-    .shop-description {
-      font-size: 18px;
+
+    .collection-image{
+      width: 100%;
     }
-  }
-  
-  @media (max-width: 640px) {
-    .shop-logo {
-      margin-left: 0;
+
+    .collection-description {
+        font-size: 14px;
     }
-  
-    .shop-title {
-      font-size: 28px;
-    }
-  
-    .shop-description {
-      font-size: 16px;
-    }
-  }
+}

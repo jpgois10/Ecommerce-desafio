@@ -1,0 +1,221 @@
+.promo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-background-light);
+    padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+/* Header */
+.promo-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.heart-svg {
+    width: 62px;
+    height: 54px;
+}
+
+.promo-title {
+    color: var(--color-text);
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-tight);
+}
+
+/* Content Layout */
+.promo-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    width: 100%;
+}
+
+/* Gift Card Promo */
+.gift-card-promo {
+    flex: 1;
+    background-color: var(--color-background);
+    border-radius: var(--border-radius-xl);
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.gift-card-image {
+    width: 100%;
+    height: 338px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-xl);
+    border-top-right-radius: var(--border-radius-xl);
+}
+
+.promo-card-content {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.card-title {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-lg);
+}
+
+.card-description {
+    color: rgba(0, 0, 0, 0.9);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Side Promos */
+.side-promos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+/* Special Offers Promo */
+.special-offers-promo {
+    background-color: var(--color-background-alt);
+    border-radius: var(--border-radius-sm);
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    display: flex;
+}
+
+.special-offers-image {
+    width: 320px;
+    height: 338px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-sm);
+    border-bottom-left-radius: var(--border-radius-sm);
+}
+
+/* Personalize Promo */
+.personalize-promo {
+    background-color: var(--color-background-warm);
+    border-radius: var(--border-radius-sm);
+    border: 3px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    display: flex;
+}
+
+.personalize-image {
+    width: 320px;
+    height: 321px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-sm);
+    border-bottom-left-radius: var(--border-radius-sm);
+}
+
+/* Side Promo Content */
+.side-promo-content {
+    flex: 1;
+    padding: var(--spacing-lg);
+}
+
+.side-card-title {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-md);
+}
+
+.side-card-description {
+    color: rgba(0, 0, 0, 0.9);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Discover Link */
+.discover-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.discover-text {
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-extrabold);
+}
+
+.chevron-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .promo-section {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .promo-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .promo-content {
+        flex-direction: column;
+    }
+
+    .promo-card-content {
+        padding: var(--spacing-lg);
+    }
+
+    .card-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .special-offers-promo,
+    .personalize-promo {
+        flex-direction: column;
+    }
+
+    .special-offers-image,
+    .personalize-image {
+        width: 100%;
+        border-top-left-radius: var(--border-radius-sm);
+        border-top-right-radius: var(--border-radius-sm);
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .promo-section {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    .heart-svg {
+        width: 40px;
+        height: 35px;
+    }
+
+    .promo-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .promo-card-content {
+        padding: var(--spacing-md);
+    }
+
+    .card-title {
+        font-size: var(--font-size-lg);
+    }
+}
